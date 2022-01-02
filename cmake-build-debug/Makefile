@@ -204,6 +204,33 @@ src/mycontact.cpp.s:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/mycontact.cpp.s
 .PHONY : src/mycontact.cpp.s
 
+src/ult.o: src/ult.cpp.o
+
+.PHONY : src/ult.o
+
+# target to build an object file
+src/ult.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ult.cpp.o
+.PHONY : src/ult.cpp.o
+
+src/ult.i: src/ult.cpp.i
+
+.PHONY : src/ult.i
+
+# target to preprocess a source file
+src/ult.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ult.cpp.i
+.PHONY : src/ult.cpp.i
+
+src/ult.s: src/ult.cpp.s
+
+.PHONY : src/ult.s
+
+# target to generate assembly for a file
+src/ult.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ult.cpp.s
+.PHONY : src/ult.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... src/mycontact.o"
 	@echo "... src/mycontact.i"
 	@echo "... src/mycontact.s"
+	@echo "... src/ult.o"
+	@echo "... src/ult.i"
+	@echo "... src/ult.s"
 .PHONY : help
 
 

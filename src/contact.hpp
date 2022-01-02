@@ -3,10 +3,25 @@
 // GitHub: https://github.com/jet-chien
 // Create Date: 1/2/22
 //
+
+#ifndef MYCONTACT_SRC_CONTACT_HPP_
+#define MYCONTACT_SRC_CONTACT_HPP_
+
 #include <string>
 
 class Contact {
+ public:
+  static const int kColCount = 5;
+  static const std::string kColumns[];
+
  private:
+  static const std::string kMCSVDelimiter;
+  static const std::string kColName;
+  static const std::string kColPhone;
+  static const std::string kColAddress;
+  static const std::string kColEmail;
+  static const std::string kColNotes;
+
   std::string m_name;
   std::string m_phone;
   std::string m_address;
@@ -18,6 +33,7 @@ class Contact {
   Contact();
   Contact(const std::string &name, const std::string &phone, const std::string &address,
           const std::string &email, const std::string &notes);
+  Contact(const std::string &mcsv_str);
 
   // Destructor Functions
   ~Contact();
@@ -38,4 +54,8 @@ class Contact {
   std::string get_notes() const;
 
   void print_info();
+  static std::string get_mcsv_header() ;
+  std::string to_mcsv_str() const ;
 };
+
+#endif //MYCONTACT_SRC_CONTACT_HPP_

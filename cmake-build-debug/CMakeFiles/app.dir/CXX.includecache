@@ -9,26 +9,18 @@
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/main.cpp
 iostream
 -
+vector
+-
+fstream
+-
 src/contact.hpp
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
-
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.cpp
-iostream
--
-contact.hpp
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
+src/mycontact.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
 
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
 string
 -
-
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.cpp
-sys/stat.h
--
-iostream
--
-mycontact.hpp
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
 
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
 string

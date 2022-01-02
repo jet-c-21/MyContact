@@ -97,6 +97,12 @@
 		<Unit filename="/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp">
 			<Option target="app"/>
 		</Unit>
+		<Unit filename="/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/ult.cpp">
+			<Option target="app"/>
+		</Unit>
+		<Unit filename="/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/ult.hpp">
+			<Option target="app"/>
+		</Unit>
 		<Unit filename="/home/puff/devWorkspace/SIDE-PROJECT/MyContact/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

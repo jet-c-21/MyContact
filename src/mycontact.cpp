@@ -5,11 +5,13 @@
 //
 #include <sys/stat.h>
 #include <iostream>
+#include <filesystem>
 #include "mycontact.hpp"
 #define print(x) std::cout << x << std::endl
 
 MyContact::MyContact() {
-  find_data_dir();
+  if(find_contact_file())
+    print("load csv!");
 }
 
 MyContact::MyContact(std::string &contact_file_path) {
@@ -19,9 +21,22 @@ MyContact::MyContact(std::string &contact_file_path) {
 MyContact::~MyContact() {
 
 }
-bool MyContact::find_data_dir() {
-  std::string data_dir = "data";
-  struct stat info;
 
-  return stat(data_dir.c_str(), &info) == 0 && info.st_mode & S_IFDIR;
+bool MyContact::find_data_dir() {
+  struct stat info;
+  return stat(kDataDir.c_str(), &info) == 0 && info.st_mode & S_IFDIR;
+}
+
+bool MyContact::find_contact_file() {
+  if (find_data_dir() == 0) {
+    mkdir(kDataDir.c_str(), 0777);
+    return false;
+  }
+
+  struct stat buffer;
+  if(stat(kContactFilePath.c_str(), &buffer) != 0) {
+    return false;
+  }
+
+  return true;
 }

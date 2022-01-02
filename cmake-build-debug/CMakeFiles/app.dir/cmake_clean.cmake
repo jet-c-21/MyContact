@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/app.dir/main.cpp.o"
   "CMakeFiles/app.dir/src/contact.cpp.o"
   "CMakeFiles/app.dir/src/mycontact.cpp.o"
+  "CMakeFiles/app.dir/src/ult.cpp.o"
   "app"
   "app.pdb"
 )

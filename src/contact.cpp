@@ -5,6 +5,19 @@
 //
 #include <iostream>
 #include "contact.hpp"
+#include "ult.hpp"
+
+std::string const Contact::kMCSVDelimiter = "<|>";
+std::string const Contact::kColName = "Name";
+std::string const Contact::kColPhone = "Phone";
+std::string const Contact::kColAddress = "Address";
+std::string const Contact::kColEmail = "Email";
+std::string const Contact::kColNotes = "Notes";
+std::string const Contact::kColumns[] = {Contact::kColName,
+                                         Contact::kColPhone,
+                                         Contact::kColAddress,
+                                         Contact::kColEmail,
+                                         Contact::kColNotes};
 
 Contact::Contact() {
   m_name = "";
@@ -26,7 +39,25 @@ Contact::Contact(const std::string &name,
   m_notes = notes;
 }
 
+Contact::Contact(const std::string &mcsv_str) {
+  std::vector<std::string> d_str_ls = g_ult::split_str(mcsv_str, kMCSVDelimiter);
+//  std::cout << d_str_ls.size() << std::endl;
 
+  for (int i = 0; i < Contact::kColCount; i++) {
+    if(Contact::kColumns[i] == Contact::kColName)
+      set_name(d_str_ls[i]);
+    else if (Contact::kColumns[i] == Contact::kColPhone)
+      set_phone(d_str_ls[i]);
+    else if (Contact::kColumns[i] == Contact::kColAddress)
+      set_address(d_str_ls[i]);
+    else if (Contact::kColumns[i] == Contact::kColEmail)
+      set_email(d_str_ls[i]);
+    else
+      set_notes(d_str_ls[i]);
+  }
+
+
+}
 
 Contact::~Contact() {
 //  std::cout << "Contact Instance Destructed." << std::endl;
@@ -84,6 +115,24 @@ void Contact::print_info() {
   std::cout << "Email: " << m_email << std::endl;
   std::cout << "Notes: " << m_notes << std::endl;
 }
+
+std::string Contact::to_mcsv_str() const {
+  return m_name + Contact::kMCSVDelimiter +
+      m_phone + Contact::kMCSVDelimiter +
+      m_address + Contact::kMCSVDelimiter +
+      m_email + Contact::kMCSVDelimiter +
+      m_notes;
+}
+
+std::string Contact::get_mcsv_header() {
+  return Contact::kColName + Contact::kMCSVDelimiter +
+      Contact::kColPhone + Contact::kMCSVDelimiter +
+      Contact::kColAddress + Contact::kMCSVDelimiter +
+      Contact::kColEmail + Contact::kMCSVDelimiter +
+      Contact::kColNotes;
+}
+
+
 
 
 
