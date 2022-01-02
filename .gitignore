@@ -1,3 +1,24 @@
+# customization
+._*
+.cache
+.idea
+.vscode
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+Thumbs.db
+ehthumbs.db
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+*.swp
+._*
+
 # Prerequisites
 *.d
 
