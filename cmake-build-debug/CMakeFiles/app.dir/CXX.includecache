@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/main.cpp
+iostream
+-
+vector
+-
+fstream
+-
+iomanip
+-
+src/contact.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
+src/mycontact.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
+
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
 string
 -
@@ -20,6 +34,8 @@ filesystem
 iomanip
 -
 string
+-
+algorithm
 -
 ult.hpp
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/ult.hpp

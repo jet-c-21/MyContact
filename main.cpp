@@ -58,9 +58,26 @@ int main() {
 //  to_contact_ls("test.mcsv");
 
 //  std::cout << std::right << std::setw(13) << "foobar" << std::endl;
+
   MyContact mct;
 //  print(mct.get_contact_count());
+//  mct.set_sort_mode(2);
+  print("Original: ");
   mct.print_contacts();
+  print("\n");
+
+//  mct.set_sort_mode(4);
+//
+//  print("Sort in a:");
+//  mct.sort();
+//  mct.print_contacts();
+//  print("\n");
+//
+//  print("Sort in d:");
+//  mct.set_sort_type(1);
+//  mct.sort();
+//  mct.print_contacts();
+//  print("\n");
 
   return 0;
 }
