@@ -12,6 +12,7 @@ CMakeFiles/app.dir/src/contact.cpp.o: ../src/ult.hpp
 CMakeFiles/app.dir/src/mycontact.cpp.o: ../src/contact.hpp
 CMakeFiles/app.dir/src/mycontact.cpp.o: ../src/mycontact.cpp
 CMakeFiles/app.dir/src/mycontact.cpp.o: ../src/mycontact.hpp
+CMakeFiles/app.dir/src/mycontact.cpp.o: ../src/ult.hpp
 
 CMakeFiles/app.dir/src/ult.cpp.o: ../src/ult.cpp
 CMakeFiles/app.dir/src/ult.cpp.o: ../src/ult.hpp

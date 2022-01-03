@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/test_1.cpp
+string
+-
+iostream
+-
+iomanip
+-
+

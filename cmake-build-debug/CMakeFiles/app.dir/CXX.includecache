@@ -6,27 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/main.cpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
+string
+-
+
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.cpp
+sys/stat.h
+-
 iostream
+-
+filesystem
+-
+iomanip
+-
+string
+-
+ult.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/ult.hpp
+mycontact.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
+
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
+string
 -
 vector
 -
 fstream
 -
-src/contact.hpp
+contact.hpp
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
-src/mycontact.hpp
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
 
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
-string
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/ult.hpp
+iostream
 -
-
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
+iomanip
+-
 string
 -
 vector
 -
-contact.hpp
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
 

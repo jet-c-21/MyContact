@@ -25,4 +25,4 @@ std::vector<std::string> split_str(const std::string &s, const std::string &d) {
   return result;
 }
 
-} // namespace gen_ult
+}

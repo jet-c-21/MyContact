@@ -8,3 +8,4 @@ file(GLOB MyContactSrc
         "src/*.cpp")
 
 add_executable(app main.cpp ${MyContactSrc})
+add_executable(test_1 test_1.cpp)

@@ -9,6 +9,9 @@
 
 #include <string>
 
+#define UNDERLINE "\033[4m"
+#define CLOSE_UNDERLINE "\033[0m"
+
 class Contact {
  public:
   static const int kColCount = 5;
@@ -29,14 +32,17 @@ class Contact {
   std::string m_notes;
 
  public:
-  // Constructor Functions
+  // Constructor
   Contact();
   Contact(const std::string &name, const std::string &phone, const std::string &address,
           const std::string &email, const std::string &notes);
   Contact(const std::string &mcsv_str);
 
-  // Destructor Functions
+  // Destructor
   ~Contact();
+
+  // Static Method
+  static std::string get_mcsv_header();
 
   void set_name(const std::string &name);
   std::string get_name() const;
@@ -54,8 +60,8 @@ class Contact {
   std::string get_notes() const;
 
   void print_info();
-  static std::string get_mcsv_header() ;
-  std::string to_mcsv_str() const ;
+  std::string to_mcsv_str() const;
+
 };
 
 #endif //MYCONTACT_SRC_CONTACT_HPP_

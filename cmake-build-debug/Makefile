@@ -123,6 +123,19 @@ app/fast:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+#=============================================================================
+# Target rules for targets named test_1
+
+# Build rule for target.
+test_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_1
+.PHONY : test_1
+
+# fast build rule for target.
+test_1/fast:
+	$(MAKE) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/build
+.PHONY : test_1/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -231,6 +244,33 @@ src/ult.cpp.s:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ult.cpp.s
 .PHONY : src/ult.cpp.s
 
+test_1.o: test_1.cpp.o
+
+.PHONY : test_1.o
+
+# target to build an object file
+test_1.cpp.o:
+	$(MAKE) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/test_1.cpp.o
+.PHONY : test_1.cpp.o
+
+test_1.i: test_1.cpp.i
+
+.PHONY : test_1.i
+
+# target to preprocess a source file
+test_1.cpp.i:
+	$(MAKE) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/test_1.cpp.i
+.PHONY : test_1.cpp.i
+
+test_1.s: test_1.cpp.s
+
+.PHONY : test_1.s
+
+# target to generate assembly for a file
+test_1.cpp.s:
+	$(MAKE) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/test_1.cpp.s
+.PHONY : test_1.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,8 +278,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... app"
 	@echo "... edit_cache"
+	@echo "... app"
+	@echo "... test_1"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -252,6 +293,9 @@ help:
 	@echo "... src/ult.o"
 	@echo "... src/ult.i"
 	@echo "... src/ult.s"
+	@echo "... test_1.o"
+	@echo "... test_1.i"
+	@echo "... test_1.s"
 .PHONY : help
 
 

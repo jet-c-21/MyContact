@@ -1,3 +1,4 @@
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/cmake-build-debug/CMakeFiles/app.dir
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/cmake-build-debug/CMakeFiles/app.dir
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/cmake-build-debug/CMakeFiles/test_1.dir

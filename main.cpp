@@ -6,9 +6,12 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <iomanip>
 
 #include "src/contact.hpp"
 #include "src/mycontact.hpp"
+
+#define print(x) std::cout << x << std::endl
 
 void to_mcsv(const std::vector<Contact> &contact_ls, const std::string &save_fp) {
   std::ofstream file(save_fp);
@@ -52,7 +55,12 @@ int main() {
 //  contact_ls.emplace_back("V", "", "kr", "v@mail", "");
 //  to_mcsv(contact_ls, "test.mcsv");
 
-  to_contact_ls("test.mcsv");
+//  to_contact_ls("test.mcsv");
+
+//  std::cout << std::right << std::setw(13) << "foobar" << std::endl;
+  MyContact mct;
+//  print(mct.get_contact_count());
+  mct.print_contacts();
 
   return 0;
 }
