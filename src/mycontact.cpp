@@ -705,7 +705,7 @@ void MyContact::exit_dlg() {
 void MyContact::delete_all_contact_dlg() {
   clear_console();
   std::string msg;
-  std::string mode_info = "• Delete a Contact •\n\n";;
+  std::string mode_info = "• Delete ALL Contact •\n\n";;
   std::cout << mode_info;
   if(ask_for_vital_execution()){
     contact_manager.remove_all_contact();
