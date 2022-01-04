@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/app.dir/main.cpp.o CMakeFiles/app.dir/src/contact.cpp.o CMakeFiles/app.dir/src/contact_manager.cpp.o CMakeFiles/app.dir/src/mycontact.cpp.o CMakeFiles/app.dir/src/ult.cpp.o  -o app 
+/usr/bin/c++  -g   CMakeFiles/app.dir/main.cpp.o CMakeFiles/app.dir/src/contact.cpp.o CMakeFiles/app.dir/src/contact_manager.cpp.o CMakeFiles/app.dir/src/mycontact.cpp.o CMakeFiles/app.dir/src/ult.cpp.o  -o app 
