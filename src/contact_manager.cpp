@@ -494,6 +494,10 @@ void ContactManager::close() {
   std::cout << msg;
 }
 
+void ContactManager::remove_all_contact() {
+  contact_ls.clear();
+}
+
 
 
 

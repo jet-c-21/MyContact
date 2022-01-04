@@ -78,6 +78,9 @@ void MyContact::main_menu_dlg() {
     case MainMenuFunc::kDeleteContact: delete_contact_dlg();
       break;
 
+    case MainMenuFunc::kDeleteAllContact: delete_all_contact_dlg();
+      break;
+
     case MainMenuFunc::kImportContactsFromFile:import_contacts_from_File_dlg();
       break;
 
@@ -100,8 +103,9 @@ void MyContact::print_main_menu() {
                           " [6] Add Contacts from file\n"
                           " [7] Edit a Contact\n"
                           " [8] Delete a Contact\n"
-                          " [9] Import Contacts List from file\n"
-                          "[10] Export Contacts List\n"
+                          " [9] Delete ALL Contact\n"
+                          "[10] Import Contacts List from file\n"
+                          "[11] Export Contacts List\n"
                           "\n"
                           " [0] Exit\n"
                           "=============================================\n"
@@ -550,7 +554,7 @@ std::tuple<bool, std::string> MyContact::ask_new_field_val(const std::string &fi
 
   std::string user_choice;
   while (true) {
-    msg = "Enter your choice ([y] or [n]): ";
+    msg = "Enter your choice, Press [y] or [n]: ";
     std::cout << msg;
     std::cin >> user_choice;
 
@@ -695,5 +699,52 @@ void MyContact::exit_dlg() {
 
   std::cout << mode_info;
   std::cout << std::endl;
+}
+
+void MyContact::delete_all_contact_dlg() {
+  clear_console();
+  std::string msg;
+  std::string mode_info = "• Delete a Contact •\n\n";;
+  std::cout << mode_info;
+  if(ask_for_vital_execution()){
+    contact_manager.remove_all_contact();
+    clear_console();
+    std::cout << mode_info;
+
+    msg = "All Contacts have been deleted.\n";
+    std::cout << msg;
+    std::cout << std::endl;
+  }
+
+  std::cout << std::endl;
+  ask_to_go_back_to_main_menu();
+}
+
+bool MyContact::ask_for_vital_execution() {
+  std::string user_choice, msg;
+  while (true) {
+    msg = "Are you sure for doing this? Press [y] or [n]: ";
+    std::cout << msg;
+    std::cin >> user_choice;
+
+    if (std::cin.fail()) {
+      invalid_menu_choice_prompt();
+      flush_cin();
+      continue;
+    }
+
+    if (user_choice != "y" && user_choice != "Y" &&
+        user_choice != "n" && user_choice != "N") {
+      invalid_menu_choice_prompt();
+      flush_cin();
+      continue;
+    }
+
+    if (user_choice == "n" || user_choice == "N")
+      return false;
+    else
+      return true;
+  }
+
 };
 

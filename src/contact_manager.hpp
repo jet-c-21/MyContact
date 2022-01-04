@@ -80,6 +80,7 @@ class ContactManager {
 
   Contact &get_contact(int contact_idx);
   void delete_contact(int contact_idx);
+  void remove_all_contact();
   void replace_contact_ls(std::vector<Contact> &new_ct_ls);
 
   std::vector<Contact> select_contacts(const std::string &query);

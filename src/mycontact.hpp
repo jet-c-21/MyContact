@@ -33,9 +33,10 @@ class MyContact {
     kAddContactsFromFile = 6,
     kEditContact = 7,
     kDeleteContact = 8,
-    kImportContactsFromFile = 9,
-    kExportContactList = 10,
-    kFunctionCount = 10,
+    kDeleteAllContact = 9,
+    kImportContactsFromFile = 10,
+    kExportContactList = 11,
+    kFunctionCount = 11,
   };
 
  public:
@@ -77,6 +78,10 @@ class MyContact {
   std::tuple<bool, std::string> ask_new_field_val(const std::string &field_name);
 
   void delete_contact_dlg();
+
+  void delete_all_contact_dlg();
+
+  static bool ask_for_vital_execution();
 
   void import_contacts_from_File_dlg();
 
