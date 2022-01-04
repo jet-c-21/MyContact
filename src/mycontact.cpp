@@ -383,7 +383,8 @@ void MyContact::add_multi_contacts_dlg() {
                                 user_input_email,
                                 user_input_notes);
 
-    std::cout << "Finish adding #" + std::to_string(i) + " Contact. \n";
+    std::cout << "Finish adding #" + std::to_string(i) + " Contact. \n\n";
+    std::cout << "Press Enter to Continue . . . \n";
     std::cout << std::endl;
 
   }
