@@ -1,6 +1,6 @@
 //
 // Author: Jet Chien
-// GitHub: https://github.com/jet-chien
+// GitHub: https://github.com/jet-c-21
 // Create Date: 1/3/22
 //
 
@@ -81,6 +81,8 @@ class MyContact {
   void import_contacts_from_File_dlg();
 
   void export_contact_list_dlg();
+
+  void exit_dlg();
 
   void ask_to_go_back_to_main_menu();
 

@@ -1,6 +1,6 @@
 //
 // Author: Jet Chien
-// GitHub: https://github.com/jet-chien
+// GitHub: https://github.com/jet-c-21
 // Create Date: 1/2/22
 //
 #include <sys/stat.h>
@@ -490,6 +490,12 @@ void ContactManager::to_mcsv(const std::string &file_save_pth) {
   }
 
   file.close();
+}
+
+void ContactManager::close() {
+  to_mcsv(kContactFilePath);
+  std::string msg = "Contact List has saved at path: " + kContactFilePath + "\n";
+  std::cout << msg;
 }
 
 

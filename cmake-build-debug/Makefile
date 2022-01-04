@@ -48,10 +48,10 @@ RM = /home/puff/devWorkspace/myIDE/clion-2019.3.3/bin/cmake/linux/bin/cmake -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/puff/devWorkspace/SIDE-PROJECT/MyContact
+CMAKE_SOURCE_DIR = "/home/puff/Desktop/MyContact-master (copy)"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/puff/devWorkspace/SIDE-PROJECT/MyContact/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/puff/Desktop/MyContact-master (copy)/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/puff/devWorkspace/SIDE-PROJECT/MyContact/cmake-build-debug/CMakeFiles /home/puff/devWorkspace/SIDE-PROJECT/MyContact/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/puff/Desktop/MyContact-master (copy)/cmake-build-debug/CMakeFiles" "/home/puff/Desktop/MyContact-master (copy)/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/puff/devWorkspace/SIDE-PROJECT/MyContact/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/puff/Desktop/MyContact-master (copy)/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -122,19 +122,6 @@ app: cmake_check_build_system
 app/fast:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
-
-#=============================================================================
-# Target rules for targets named test_1
-
-# Build rule for target.
-test_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_1
-.PHONY : test_1
-
-# fast build rule for target.
-test_1/fast:
-	$(MAKE) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/build
-.PHONY : test_1/fast
 
 main.o: main.cpp.o
 
@@ -271,33 +258,6 @@ src/ult.cpp.s:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ult.cpp.s
 .PHONY : src/ult.cpp.s
 
-test_1.o: test_1.cpp.o
-
-.PHONY : test_1.o
-
-# target to build an object file
-test_1.cpp.o:
-	$(MAKE) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/test_1.cpp.o
-.PHONY : test_1.cpp.o
-
-test_1.i: test_1.cpp.i
-
-.PHONY : test_1.i
-
-# target to preprocess a source file
-test_1.cpp.i:
-	$(MAKE) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/test_1.cpp.i
-.PHONY : test_1.cpp.i
-
-test_1.s: test_1.cpp.s
-
-.PHONY : test_1.s
-
-# target to generate assembly for a file
-test_1.cpp.s:
-	$(MAKE) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/test_1.cpp.s
-.PHONY : test_1.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -305,9 +265,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... app"
-	@echo "... test_1"
+	@echo "... edit_cache"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -323,9 +282,6 @@ help:
 	@echo "... src/ult.o"
 	@echo "... src/ult.i"
 	@echo "... src/ult.s"
-	@echo "... test_1.o"
-	@echo "... test_1.i"
-	@echo "... test_1.s"
 .PHONY : help
 
 

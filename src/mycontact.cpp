@@ -1,6 +1,6 @@
 //
 // Author: Jet Chien
-// GitHub: https://github.com/jet-chien
+// GitHub: https://github.com/jet-c-21
 // Create Date: 1/3/22
 //
 #include <string>
@@ -51,7 +51,8 @@ void MyContact::main_menu_dlg() {
   int user_choice = ask_main_menu_choice();
 
   switch (static_cast<MainMenuFunc>(user_choice)) {
-    case MainMenuFunc::kExit:break;
+    case MainMenuFunc::kExit:exit_dlg();
+      break;
 
     case MainMenuFunc::kViewContactList:view_contact_ls_dlg();
       break;
@@ -680,5 +681,19 @@ void MyContact::export_contact_list_dlg() {
   std::cout << std::endl;
 
   ask_to_go_back_to_main_menu();
+}
+
+void MyContact::exit_dlg() {
+  clear_console();
+  contact_manager.close();
+
+  std::cout << std::endl << std::endl;
+
+  std::string mode_info = "♦♦♦ Thank You For Using My Contact! ♦♦♦\n"
+                          "\n"
+                          "* My Contact © Developed By: https://github.com/jet-c-21";
+
+  std::cout << mode_info;
+  std::cout << std::endl;
 };
 

@@ -1,6 +1,6 @@
 //
 // Author: Jet Chien
-// GitHub: https://github.com/jet-chien
+// GitHub: https://github.com/jet-c-21
 // Create Date: 1/2/22
 //
 
@@ -92,6 +92,8 @@ class ContactManager {
                    const std::string &notes);
 
   void extend_contact_ls(std::vector<Contact> &new_ct_ls);
+
+  void close();
 
  private:
   // Private Static Method

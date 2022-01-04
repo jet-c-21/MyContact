@@ -1,6 +1,6 @@
 //
 // Author: Jet Chien
-// GitHub: https://github.com/jet-chien
+// GitHub: https://github.com/jet-c-21
 // Create Date: 1/2/22
 //
 #include <iostream>
