@@ -475,6 +475,11 @@ void ContactManager::replace_contact_ls(std::vector<Contact> &new_ct_ls) {
 
 void ContactManager::to_mcsv(const std::string &file_save_pth) {
   std::ofstream file(file_save_pth);
+  if (contact_ls.empty()) {
+    file << contact_ls.begin()->get_mcsv_header();
+    file.close();
+    return;
+  }
 
   file << contact_ls.begin()->get_mcsv_header() << std::endl;
   for (int i = 0; i < contact_ls.size(); i++) {
