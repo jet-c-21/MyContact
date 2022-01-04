@@ -51,20 +51,7 @@ std::vector<Contact> to_contact_ls(const std::string &mcsv_fp) {
 
 int main() {
   ContactManager ct_mgr;
-//  ct_mgr.print_contacts();
-
-//  ct_mgr.set_sort_mode(1);
-//  ct_mgr.sort();
-//  ct_mgr.print_contacts();
-
-//  ct_mgr.search("xxx");
-//  auto x = ct_mgr.select_contacts("kr");
-//  ct_mgr.print_contacts(x, ContactManager::SortField::kPhone, )
-
-//  print(ct_mgr.get_sort_mode_name_x());
-
   MyContact mc(ct_mgr);
-
   mc.launch();
 
   return 0;

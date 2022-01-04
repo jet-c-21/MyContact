@@ -14,8 +14,8 @@
 #include "contact_manager.hpp"
 #define print(x) std::cout << x << std::endl
 
-std::string const ContactManager::kDataDir = "data";
-std::string const ContactManager::kContactFilePath = ContactManager::kDataDir + "/contacts.mcsv";
+//std::string const ContactManager::kDataDir = "data";
+std::string const ContactManager::kContactFilePath = "contacts.mcsv";
 std::string const ContactManager::kFldDelimiter = "|";
 std::string const ContactManager::kFldNO = "No.";
 std::string const ContactManager::kFldName = "Name";
@@ -51,16 +51,12 @@ ContactManager::~ContactManager() {
 
 }
 
-bool ContactManager::find_data_dir() {
-  struct stat info;
-  return stat(kDataDir.c_str(), &info) == 0 && info.st_mode & S_IFDIR;
-}
+//bool ContactManager::find_data_dir() {
+//  struct stat info;
+//  return stat(kDataDir.c_str(), &info) == 0 && info.st_mode & S_IFDIR;
+//}
 
 bool ContactManager::find_contact_file() {
-  if (find_data_dir() == 0) {
-    mkdir(kDataDir.c_str(), 0777);
-    return false;
-  }
 
   struct stat buffer;
   if (stat(kContactFilePath.c_str(), &buffer) != 0) {

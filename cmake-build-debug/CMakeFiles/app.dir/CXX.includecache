@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/puff/Desktop/MyContact-master (copy)/main.cpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/main.cpp
 iostream
 -
 vector
@@ -16,45 +16,17 @@ fstream
 iomanip
 -
 src/contact.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/contact.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
 src/contact_manager.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/contact_manager.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact_manager.hpp
 src/mycontact.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/mycontact.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
 
-/home/puff/Desktop/MyContact-master (copy)/src/contact.cpp
-iostream
--
-contact.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/contact.hpp
-ult.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/ult.hpp
-
-/home/puff/Desktop/MyContact-master (copy)/src/contact.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
 string
 -
 
-/home/puff/Desktop/MyContact-master (copy)/src/contact_manager.cpp
-sys/stat.h
--
-iostream
--
-filesystem
--
-iomanip
--
-string
--
-map
--
-algorithm
--
-ult.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/ult.hpp
-contact_manager.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/contact_manager.hpp
-
-/home/puff/Desktop/MyContact-master (copy)/src/contact_manager.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact_manager.hpp
 string
 -
 map
@@ -64,35 +36,11 @@ vector
 fstream
 -
 contact.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/contact.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
 
-/home/puff/Desktop/MyContact-master (copy)/src/mycontact.cpp
-string
--
-iostream
--
-limits
--
-mycontact.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/mycontact.hpp
-
-/home/puff/Desktop/MyContact-master (copy)/src/mycontact.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
 tuple
 -
 contact_manager.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/contact_manager.hpp
-
-/home/puff/Desktop/MyContact-master (copy)/src/ult.cpp
-ult.hpp
-/home/puff/Desktop/MyContact-master (copy)/src/ult.hpp
-
-/home/puff/Desktop/MyContact-master (copy)/src/ult.hpp
-iostream
--
-iomanip
--
-string
--
-vector
--
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact_manager.hpp
 
