@@ -1,3 +1,0 @@
-/Users/puff/Desktop/CODING/SIDE-PROJECT/MyContact/build/CMakeFiles/app.dir
-/Users/puff/Desktop/CODING/SIDE-PROJECT/MyContact/build/CMakeFiles/edit_cache.dir
-/Users/puff/Desktop/CODING/SIDE-PROJECT/MyContact/build/CMakeFiles/rebuild_cache.dir
