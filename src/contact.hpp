@@ -36,7 +36,7 @@ class Contact {
   Contact();
   Contact(const std::string &name, const std::string &phone, const std::string &address,
           const std::string &email, const std::string &notes);
-  Contact(const std::string &mcsv_str);
+  explicit Contact(const std::string &mcsv_str);
 
   // Destructor
   ~Contact();
@@ -61,6 +61,8 @@ class Contact {
 
   void print_info();
   std::string to_mcsv_str() const;
+
+  bool is_match(const std::string &query);
 
 };
 

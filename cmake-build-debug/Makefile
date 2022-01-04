@@ -190,6 +190,33 @@ src/contact.cpp.s:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/contact.cpp.s
 .PHONY : src/contact.cpp.s
 
+src/contact_manager.o: src/contact_manager.cpp.o
+
+.PHONY : src/contact_manager.o
+
+# target to build an object file
+src/contact_manager.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/contact_manager.cpp.o
+.PHONY : src/contact_manager.cpp.o
+
+src/contact_manager.i: src/contact_manager.cpp.i
+
+.PHONY : src/contact_manager.i
+
+# target to preprocess a source file
+src/contact_manager.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/contact_manager.cpp.i
+.PHONY : src/contact_manager.cpp.i
+
+src/contact_manager.s: src/contact_manager.cpp.s
+
+.PHONY : src/contact_manager.s
+
+# target to generate assembly for a file
+src/contact_manager.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/contact_manager.cpp.s
+.PHONY : src/contact_manager.cpp.s
+
 src/mycontact.o: src/mycontact.cpp.o
 
 .PHONY : src/mycontact.o
@@ -287,6 +314,9 @@ help:
 	@echo "... src/contact.o"
 	@echo "... src/contact.i"
 	@echo "... src/contact.s"
+	@echo "... src/contact_manager.o"
+	@echo "... src/contact_manager.i"
+	@echo "... src/contact_manager.s"
 	@echo "... src/mycontact.o"
 	@echo "... src/mycontact.i"
 	@echo "... src/mycontact.s"

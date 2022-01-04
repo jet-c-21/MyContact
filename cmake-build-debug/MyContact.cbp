@@ -135,6 +135,12 @@
 		<Unit filename="/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp">
 			<Option target="app"/>
 		</Unit>
+		<Unit filename="/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact_manager.cpp">
+			<Option target="app"/>
+		</Unit>
+		<Unit filename="/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact_manager.hpp">
+			<Option target="app"/>
+		</Unit>
 		<Unit filename="/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.cpp">
 			<Option target="app"/>
 		</Unit>

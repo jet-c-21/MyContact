@@ -70,17 +70,77 @@ CMakeFiles/app.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/puff/devWorkspace/SIDE-PROJECT/MyContact/main.cpp -o CMakeFiles/app.dir/main.cpp.s
 
+CMakeFiles/app.dir/src/contact.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/contact.cpp.o: ../src/contact.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/puff/devWorkspace/SIDE-PROJECT/MyContact/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/contact.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/contact.cpp.o -c /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.cpp
+
+CMakeFiles/app.dir/src/contact.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/contact.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.cpp > CMakeFiles/app.dir/src/contact.cpp.i
+
+CMakeFiles/app.dir/src/contact.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/contact.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.cpp -o CMakeFiles/app.dir/src/contact.cpp.s
+
+CMakeFiles/app.dir/src/contact_manager.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/contact_manager.cpp.o: ../src/contact_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/puff/devWorkspace/SIDE-PROJECT/MyContact/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/contact_manager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/contact_manager.cpp.o -c /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact_manager.cpp
+
+CMakeFiles/app.dir/src/contact_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/contact_manager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact_manager.cpp > CMakeFiles/app.dir/src/contact_manager.cpp.i
+
+CMakeFiles/app.dir/src/contact_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/contact_manager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact_manager.cpp -o CMakeFiles/app.dir/src/contact_manager.cpp.s
+
+CMakeFiles/app.dir/src/mycontact.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/mycontact.cpp.o: ../src/mycontact.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/puff/devWorkspace/SIDE-PROJECT/MyContact/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/mycontact.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/mycontact.cpp.o -c /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.cpp
+
+CMakeFiles/app.dir/src/mycontact.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/mycontact.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.cpp > CMakeFiles/app.dir/src/mycontact.cpp.i
+
+CMakeFiles/app.dir/src/mycontact.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/mycontact.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.cpp -o CMakeFiles/app.dir/src/mycontact.cpp.s
+
+CMakeFiles/app.dir/src/ult.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/ult.cpp.o: ../src/ult.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/puff/devWorkspace/SIDE-PROJECT/MyContact/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/src/ult.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/ult.cpp.o -c /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/ult.cpp
+
+CMakeFiles/app.dir/src/ult.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/ult.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/ult.cpp > CMakeFiles/app.dir/src/ult.cpp.i
+
+CMakeFiles/app.dir/src/ult.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/ult.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/ult.cpp -o CMakeFiles/app.dir/src/ult.cpp.s
+
 # Object files for target app
 app_OBJECTS = \
-"CMakeFiles/app.dir/main.cpp.o"
+"CMakeFiles/app.dir/main.cpp.o" \
+"CMakeFiles/app.dir/src/contact.cpp.o" \
+"CMakeFiles/app.dir/src/contact_manager.cpp.o" \
+"CMakeFiles/app.dir/src/mycontact.cpp.o" \
+"CMakeFiles/app.dir/src/ult.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
 
 app: CMakeFiles/app.dir/main.cpp.o
+app: CMakeFiles/app.dir/src/contact.cpp.o
+app: CMakeFiles/app.dir/src/contact_manager.cpp.o
+app: CMakeFiles/app.dir/src/mycontact.cpp.o
+app: CMakeFiles/app.dir/src/ult.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/puff/devWorkspace/SIDE-PROJECT/MyContact/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/puff/devWorkspace/SIDE-PROJECT/MyContact/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

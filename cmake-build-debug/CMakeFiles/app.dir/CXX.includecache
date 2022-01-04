@@ -6,44 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/main.cpp
-iostream
--
-vector
--
-fstream
--
-iomanip
--
-src/contact.hpp
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
-src/mycontact.hpp
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
-
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
 string
 -
 
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.cpp
-sys/stat.h
--
-iostream
--
-filesystem
--
-iomanip
--
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact_manager.hpp
 string
 -
-algorithm
--
-ult.hpp
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/ult.hpp
-mycontact.hpp
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
-
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
-string
+map
 -
 vector
 -
@@ -52,13 +22,17 @@ fstream
 contact.hpp
 /home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact.hpp
 
-/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/ult.hpp
-iostream
--
-iomanip
--
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.cpp
 string
 -
-vector
+iostream
 -
+limits
+-
+mycontact.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
+
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/mycontact.hpp
+contact_manager.hpp
+/home/puff/devWorkspace/SIDE-PROJECT/MyContact/src/contact_manager.hpp
 

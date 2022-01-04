@@ -9,6 +9,7 @@
 #include <iomanip>
 
 #include "src/contact.hpp"
+#include "src/contact_manager.hpp"
 #include "src/mycontact.hpp"
 
 #define print(x) std::cout << x << std::endl
@@ -49,35 +50,22 @@ std::vector<Contact> to_contact_ls(const std::string &mcsv_fp) {
 }
 
 int main() {
-//  std::vector<Contact> contact_ls;
-//  contact_ls.emplace_back("Puff", "520", "tw", "puff@mail", "<3");
-//  contact_ls.emplace_back("Suga", "123", "kr", "suga@mail", "rapper");
-//  contact_ls.emplace_back("V", "", "kr", "v@mail", "");
-//  to_mcsv(contact_ls, "test.mcsv");
+  ContactManager ct_mgr;
+//  ct_mgr.print_contacts();
 
-//  to_contact_ls("test.mcsv");
+//  ct_mgr.set_sort_mode(1);
+//  ct_mgr.sort();
+//  ct_mgr.print_contacts();
 
-//  std::cout << std::right << std::setw(13) << "foobar" << std::endl;
+//  ct_mgr.search("xxx");
+//  auto x = ct_mgr.select_contacts("kr");
+//  ct_mgr.print_contacts(x, ContactManager::SortField::kPhone, )
 
-  MyContact mct;
-//  print(mct.get_contact_count());
-//  mct.set_sort_mode(2);
-  print("Original: ");
-  mct.print_contacts();
-  print("\n");
+//  print(ct_mgr.get_sort_mode_name_x());
 
-//  mct.set_sort_mode(4);
-//
-//  print("Sort in a:");
-//  mct.sort();
-//  mct.print_contacts();
-//  print("\n");
-//
-//  print("Sort in d:");
-//  mct.set_sort_type(1);
-//  mct.sort();
-//  mct.print_contacts();
-//  print("\n");
+  MyContact mc(ct_mgr);
+
+  mc.launch();
 
   return 0;
 }

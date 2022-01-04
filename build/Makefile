@@ -150,6 +150,114 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/contact.o: src/contact.cpp.o
+
+.PHONY : src/contact.o
+
+# target to build an object file
+src/contact.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/contact.cpp.o
+.PHONY : src/contact.cpp.o
+
+src/contact.i: src/contact.cpp.i
+
+.PHONY : src/contact.i
+
+# target to preprocess a source file
+src/contact.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/contact.cpp.i
+.PHONY : src/contact.cpp.i
+
+src/contact.s: src/contact.cpp.s
+
+.PHONY : src/contact.s
+
+# target to generate assembly for a file
+src/contact.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/contact.cpp.s
+.PHONY : src/contact.cpp.s
+
+src/contact_manager.o: src/contact_manager.cpp.o
+
+.PHONY : src/contact_manager.o
+
+# target to build an object file
+src/contact_manager.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/contact_manager.cpp.o
+.PHONY : src/contact_manager.cpp.o
+
+src/contact_manager.i: src/contact_manager.cpp.i
+
+.PHONY : src/contact_manager.i
+
+# target to preprocess a source file
+src/contact_manager.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/contact_manager.cpp.i
+.PHONY : src/contact_manager.cpp.i
+
+src/contact_manager.s: src/contact_manager.cpp.s
+
+.PHONY : src/contact_manager.s
+
+# target to generate assembly for a file
+src/contact_manager.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/contact_manager.cpp.s
+.PHONY : src/contact_manager.cpp.s
+
+src/mycontact.o: src/mycontact.cpp.o
+
+.PHONY : src/mycontact.o
+
+# target to build an object file
+src/mycontact.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/mycontact.cpp.o
+.PHONY : src/mycontact.cpp.o
+
+src/mycontact.i: src/mycontact.cpp.i
+
+.PHONY : src/mycontact.i
+
+# target to preprocess a source file
+src/mycontact.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/mycontact.cpp.i
+.PHONY : src/mycontact.cpp.i
+
+src/mycontact.s: src/mycontact.cpp.s
+
+.PHONY : src/mycontact.s
+
+# target to generate assembly for a file
+src/mycontact.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/mycontact.cpp.s
+.PHONY : src/mycontact.cpp.s
+
+src/ult.o: src/ult.cpp.o
+
+.PHONY : src/ult.o
+
+# target to build an object file
+src/ult.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ult.cpp.o
+.PHONY : src/ult.cpp.o
+
+src/ult.i: src/ult.cpp.i
+
+.PHONY : src/ult.i
+
+# target to preprocess a source file
+src/ult.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ult.cpp.i
+.PHONY : src/ult.cpp.i
+
+src/ult.s: src/ult.cpp.s
+
+.PHONY : src/ult.s
+
+# target to generate assembly for a file
+src/ult.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ult.cpp.s
+.PHONY : src/ult.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +270,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/contact.o"
+	@echo "... src/contact.i"
+	@echo "... src/contact.s"
+	@echo "... src/contact_manager.o"
+	@echo "... src/contact_manager.i"
+	@echo "... src/contact_manager.s"
+	@echo "... src/mycontact.o"
+	@echo "... src/mycontact.i"
+	@echo "... src/mycontact.s"
+	@echo "... src/ult.o"
+	@echo "... src/ult.i"
+	@echo "... src/ult.s"
 .PHONY : help
 
 
