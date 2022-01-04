@@ -580,7 +580,7 @@ std::tuple<bool, std::string> MyContact::ask_new_field_val(const std::string &fi
   }
 
   std::cout << std::endl;
-  msg = "Enter the new value for Field < " + field_name + ">: ";
+  msg = "Enter the new value for Field <" + field_name + ">: ";
   std::cout << msg;
   flush_cin();
   std::string new_val;
@@ -646,6 +646,10 @@ void MyContact::import_contacts_from_File_dlg() {
     std::cout << msg;
     std::cout << std::endl;
     ask_to_go_back_to_main_menu();
+  }
+
+  if (!ask_for_vital_execution()) {
+    return ask_to_go_back_to_main_menu();
   }
 
   std::vector<Contact> new_ct_ls = ContactManager::read_mcsv(file_path);
