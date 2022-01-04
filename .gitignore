@@ -18,6 +18,8 @@ ehthumbs.db
 .Trashes
 *.swp
 ._*
+build
+cmake-build-debug
 
 # Prerequisites
 *.d
