@@ -16,9 +16,9 @@ class Contact {
  public:
   static const int kColCount = 5;
   static const std::string kColumns[];
+  static const std::string kMCSVDelimiter;
 
  private:
-  static const std::string kMCSVDelimiter;
   static const std::string kColName;
   static const std::string kColPhone;
   static const std::string kColAddress;

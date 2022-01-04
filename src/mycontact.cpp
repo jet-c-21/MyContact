@@ -151,6 +151,7 @@ void MyContact::view_contact_ls_dlg() {
 }
 
 void MyContact::ask_to_go_back_to_main_menu() {
+  std::cout << std::endl;
   std::string msg = "Press ENTER (or double press) to go back to MAIN MENU . . . ";
   std::cout << msg;
 
@@ -265,7 +266,6 @@ void MyContact::search_contact_dlg() {
   clear_console();
   std::string mode_info = "• Search Contact •\n\n";;
   std::cout << mode_info;
-
 
   std::string msg = "Please Enter an KeyWord: ";
   std::cout << msg;
@@ -649,10 +649,23 @@ void MyContact::import_contacts_from_File_dlg() {
     ask_to_go_back_to_main_menu();
   }
 
+//  if(!contact_manager.get_contact_count())
+//    goto final;
+
+  if (contact_manager.get_contact_count()) {
+    std::cout << std::endl;
+    msg = "If the import operation succeed, " + std::to_string(contact_manager.get_contact_count()) +
+        " Contacts will be discarded.\n";
+    std::cout << msg;
+    std::cout << std::endl;
+
+  }
+
   if (!ask_for_vital_execution()) {
     return ask_to_go_back_to_main_menu();
   }
 
+//  final:
   std::vector<Contact> new_ct_ls = ContactManager::read_mcsv(file_path);
   contact_manager.replace_contact_ls(new_ct_ls);
 
@@ -712,6 +725,20 @@ void MyContact::delete_all_contact_dlg() {
   std::string msg;
   std::string mode_info = "• Delete ALL Contact •\n\n";;
   std::cout << mode_info;
+
+  if (!contact_manager.get_contact_count()) {
+    msg = "Contact List is Empty now!\n";
+    std::cout << msg;
+    std::cout << std::endl;
+
+    return ask_to_go_back_to_main_menu();
+  }
+
+  std::cout << std::endl;
+  msg = "There are " + std::to_string(contact_manager.get_contact_count()) + " Contacts will be deleted.\n\n";
+  std::cout << msg;
+  std::cout << std::endl;
+
   if (ask_for_vital_execution()) {
     contact_manager.remove_all_contact();
     clear_console();
