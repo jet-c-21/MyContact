@@ -266,10 +266,11 @@ void MyContact::search_contact_dlg() {
   std::string mode_info = "• Search Contact •\n\n";;
   std::cout << mode_info;
 
-  std::string query;
+
   std::string msg = "Please Enter an KeyWord: ";
   std::cout << msg;
 
+  std::string query;
   flush_cin();
   std::getline(std::cin, query, '\n');
   std::cout << "Search : " + query << std::endl;
@@ -711,7 +712,7 @@ void MyContact::delete_all_contact_dlg() {
   std::string msg;
   std::string mode_info = "• Delete ALL Contact •\n\n";;
   std::cout << mode_info;
-  if(ask_for_vital_execution()){
+  if (ask_for_vital_execution()) {
     contact_manager.remove_all_contact();
     clear_console();
     std::cout << mode_info;
@@ -751,5 +752,22 @@ bool MyContact::ask_for_vital_execution() {
       return true;
   }
 
-};
+}
+
+//std::string MyContact::ask_valid_input_string() {
+//  std::string result;
+//  flush_cin();
+//
+//  while (true) {
+//    std::getline(std::cin, result, '\n');
+//
+//    if (result.find(Contact::kMCSVDelimiter) != std::string::npos) {
+//      // invalid
+//      continue;
+//    }
+//
+//    // return
+//  }
+//
+//};
 

@@ -91,6 +91,8 @@ class MyContact {
 
   void ask_to_go_back_to_main_menu();
 
+//  std::string ask_valid_input_string();
+
   void clear_console();
 
   static ContactData gen_contact_data();
