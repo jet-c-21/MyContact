@@ -131,6 +131,7 @@ std::string Contact::get_mcsv_header() {
       Contact::kColEmail + Contact::kMCSVDelimiter +
       Contact::kColNotes;
 }
+
 bool Contact::is_match(const std::string &query) {
   if(get_name().find(query)!= std::string::npos)
     return true;

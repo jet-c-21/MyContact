@@ -19,6 +19,13 @@ class ContactManager {
   static const std::string kFields[];
   static const int kSortFldCount = 5;
   static const std::string kSortFields[];
+  static const std::string kFldDelimiter;
+  static const std::string kFldNO;
+  static const std::string kFldName;
+  static const std::string kFldPhone;
+  static const std::string kFldAddress;
+  static const std::string kFldEmail;
+  static const std::string kFldNotes;
 
   enum class SortField {
     kName = 0, kPhone, kAddress, kEmail, kNotes
@@ -38,13 +45,6 @@ class ContactManager {
 
   std::vector<Contact> contact_ls;
 
-  static const std::string kFldDelimiter;
-  static const std::string kFldNO;
-  static const std::string kFldName;
-  static const std::string kFldPhone;
-  static const std::string kFldAddress;
-  static const std::string kFldEmail;
-  static const std::string kFldNotes;
 
  public:
   // Constructor
@@ -59,6 +59,9 @@ class ContactManager {
   static void print_contacts(std::vector<Contact> &ct_ls, SortField &sort_field, SortType &sort_type);
   static std::string get_sort_mode_name(SortField &sort_field);
   static std::string get_sort_type_symbol(SortType &sort_type);
+  static bool find_contact_file(const std::string &mcsv_file_path);
+
+  void to_mcsv(const std::string &file_save_pth);
 
   int get_contact_count();
   void print_contacts();
@@ -74,8 +77,21 @@ class ContactManager {
   void sort_by_email();
   void sort_by_notes();
 
+
+  Contact &get_contact(int contact_idx);
+  void delete_contact(int contact_idx);
+  void replace_contact_ls(std::vector<Contact> &new_ct_ls);
+
   std::vector<Contact> select_contacts(const std::string &query);
   void search(const std::string &query);
+
+  void add_contact(const std::string &name,
+                   const std::string &phone,
+                   const std::string &address,
+                   const std::string &email,
+                   const std::string &notes);
+
+  void extend_contact_ls(std::vector<Contact> &new_ct_ls);
 
  private:
   // Private Static Method

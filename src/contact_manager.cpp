@@ -439,6 +439,67 @@ void ContactManager::search(const std::string &query) {
 
 }
 
+void ContactManager::add_contact(const std::string &name,
+                                 const std::string &phone,
+                                 const std::string &address,
+                                 const std::string &email,
+                                 const std::string &notes) {
+
+  contact_ls.emplace_back(name, phone, address, email, notes);
+  sort();
+}
+
+bool ContactManager::find_contact_file(const std::string &mcsv_file_path) {
+  struct stat buffer;
+  if (stat(mcsv_file_path.c_str(), &buffer) != 0) {
+    return false;
+  }
+
+  return true;
+}
+
+void ContactManager::extend_contact_ls(std::vector<Contact> &new_ct_ls) {
+  contact_ls.reserve(contact_ls.size() + std::distance(new_ct_ls.begin(), new_ct_ls.end()));
+  contact_ls.insert(contact_ls.end(), new_ct_ls.begin(), new_ct_ls.end());
+  sort();
+}
+
+Contact &ContactManager::get_contact(int contact_idx) {
+  return contact_ls[contact_idx];
+}
+
+void ContactManager::delete_contact(int contact_idx) {
+  contact_ls.erase(contact_ls.begin() + contact_idx);
+}
+
+void ContactManager::replace_contact_ls(std::vector<Contact> &new_ct_ls) {
+  contact_ls = new_ct_ls;
+  sort();
+}
+
+void ContactManager::to_mcsv(const std::string &file_save_pth) {
+  std::ofstream file(file_save_pth);
+
+  file << contact_ls.begin()->get_mcsv_header() << std::endl;
+  for (int i = 0; i < contact_ls.size(); i++) {
+    if (i != contact_ls.size() - 1) {
+      file << contact_ls[i].to_mcsv_str() << std::endl;
+    } else {
+      file << contact_ls[i].to_mcsv_str();
+    }
+  }
+
+  file.close();
+}
+
+
+
+
+
+
+
+
+
 
 
 
