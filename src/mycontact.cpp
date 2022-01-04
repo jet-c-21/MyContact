@@ -613,15 +613,17 @@ void MyContact::delete_contact_dlg() {
   std::cout << std::endl;
 
   int edit_ct_number = ask_user_select_ct_number();
-  contact_manager.delete_contact(edit_ct_number - 1);
-  clear_console();
-  std::cout << mode_info;
+  if (ask_for_vital_execution()) {
+    contact_manager.delete_contact(edit_ct_number - 1);
+    clear_console();
+    std::cout << mode_info;
 
-  clear_console();
-  std::cout << mode_info;
-  msg = "Finish Deletion.\n";
-  std::cout << msg;
-  std::cout << std::endl;
+    clear_console();
+    std::cout << mode_info;
+    msg = "Finish Deletion.\n";
+    std::cout << msg;
+    std::cout << std::endl;
+  }
 
   ask_to_go_back_to_main_menu();
 }
