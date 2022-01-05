@@ -651,8 +651,6 @@ void MyContact::import_contacts_from_File_dlg() {
     ask_to_go_back_to_main_menu();
   }
 
-//  if(!contact_manager.get_contact_count())
-//    goto final;
 
   if (contact_manager.get_contact_count()) {
     std::cout << std::endl;
@@ -667,7 +665,7 @@ void MyContact::import_contacts_from_File_dlg() {
     return ask_to_go_back_to_main_menu();
   }
 
-//  final:
+
   std::vector<Contact> new_ct_ls = ContactManager::read_mcsv(file_path);
   contact_manager.replace_contact_ls(new_ct_ls);
 
